@@ -3,6 +3,7 @@ package com.spring_data_jpa.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.spring_data_jpa.entity.EmployeeDetails;
 import com.spring_data_jpa.service.EmployeeService;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/demo-api")
 public class EmployeeController {
